@@ -1,0 +1,35 @@
+/* 
+Color navbar amarillo: #fff159 */
+header{
+    background-color: #fff159;
+}
+input{
+    width: 600px;
+    height: 39px;
+    margin-top: 5px;
+    margin-left: 50px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    padding: 7px 60px 9px 15px;
+    border-radius: 2px;
+    border: 0 rgba(0,0,0,.2);
+}
+input:focus{
+    border: none;
+}
+.button__header{
+    padding: 19px, 0, 10px, 20px;
+}
+.nav-header{
+    align-self: center;
+}
+.nav-menu{
+    align-items: center;
+}
+.compraAhora{
+    padding: 10px;
+    text-decoration: none;
+}
+.compraAhora:a{
+    color:teal;
+}
