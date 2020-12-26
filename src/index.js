@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './componentes/navbar/navbar';
+import App from './app';
 import "./style.css"
 
-ReactDOM.render(<NavBar></NavBar> , document.getElementById('root')
+ReactDOM.render(<App/> , document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
