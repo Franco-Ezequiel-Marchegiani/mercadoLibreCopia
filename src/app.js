@@ -1,13 +1,15 @@
 import React from 'react';
-import CartWidget from "./componentes/cartWidget";
-import ItemListContainer from './componentes/itemListContainer';
+import NavBar from "./componentes/navbar/navbar";
+import Carusel from './componentes/slider/carusel';
+import BarraHome from "./componentes/barraHome/barraHome"
 
 
 const App = function(){
     return(
         <>
-            <CartWidget/>
-            <ItemListContainer/>
+            <NavBar/>
+            <Carusel/>
+            <BarraHome/>
         </>
     )
 }

@@ -1,5 +1,6 @@
 /* 
-Color navbar amarillo: #fff159 */
+Color navbar amarillo: #fff159 
+Color fondo gris: #ebebeb*/
 header{
     background-color: #fff159;
 }
@@ -22,19 +23,30 @@ input:focus{
 }
 .nav-header{
     align-self: center;
+    background-color: #fff159;
 }
 .nav-menu{
     align-items: center;
+    background-color: #fff159;
+    padding-left: 75px;
 }
 .compraAhora{
     padding: 10px;
     text-decoration: none;
+    margin-top: 7px;
 }
 .compraAhora:a{
-    color:teal;
+    color:rgb(255, 255, 255);
 }
 .logo{
     width: 134px;
     margin-top: 10px;
     margin-left: 100px;
+}
+.buscador{
+    margin-top: 10px;
+}
+.navBar__usuario{
+    display: flex;
+    padding-left: 250px;
 }
