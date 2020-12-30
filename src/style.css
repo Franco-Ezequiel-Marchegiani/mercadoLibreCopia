@@ -1,6 +1,12 @@
 /* 
 Color navbar amarillo: #fff159 
 Color fondo gris: #ebebeb*/
+html{
+    width: 100%;
+}
+.header{
+    width: 100%;
+}
 header{
     background-color: #fff159;
 }
@@ -49,4 +55,43 @@ input:focus{
 .navBar__usuario{
     display: flex;
     padding-left: 250px;
+}
+.sectionItemCount{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto"
+    "cards";
+    background-color: #ebebeb;
+}
+.divContainerCompras{
+    grid-area: cards;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.compraItem{
+    padding: 10px;
+}
+.tituloUltimaCompra{
+    display: flex;
+    color: #666;
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 300;
+}
+.sectionHeaderItemCount{
+    grid-area: texto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.linkUltimaCompra{
+    font-size: 16px;
+    padding: 9px 0px 0px 10px;
+}
+
+.buttonCard{
+    margin: 5px;
 }

@@ -10,7 +10,7 @@ import CartWidget from '../../containers/cartWidget';
 function NavBar(){
     return(
         <div className="nav-header">
-                <Row>
+                <Row className="header">
                     <Col sm={3}><a href="#"><img src={Logo} alt="Logo Mercado Libre" className="logo"/></a></Col>
                     <Col sm={5}>
                     <input className="buscador" type="text" placeholder="Buscar productos, marcas, y más..." name="search" ></input>
