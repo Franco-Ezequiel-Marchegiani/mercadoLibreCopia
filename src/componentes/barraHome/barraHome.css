@@ -1,6 +1,11 @@
 .metodoPago{
+    width: 100%;
     background-color: #ebebeb;  
     padding-top: 40px;
+}
+.barraHome{
+    max-width: 1600px;
+    margin: auto;
 }
 .divContainer{
     display: flex;

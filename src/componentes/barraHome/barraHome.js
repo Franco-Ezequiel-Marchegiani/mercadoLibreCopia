@@ -11,22 +11,22 @@ function BarraHome(){
             <nav className="barraHome">
                 <div className="divContainer">
                     <div className="creditCard">
-                        <img src={Creditcad} alt="" className="imagenCreditCard"/>
+                    <a href="#"><img src={Creditcad} alt="" className="imagenCreditCard"/></a>    
                         <p className="textoCreditCard">Tarjeta de crédito</p>
                         <a href="" className="linkCreditCard">Ver promociones bancarias</a>
                     </div>
                     <div className="debitCard">
-                        <img src={DebitCard} alt="" className="imagenDebitCard"/>
+                    <a href="#"><img src={DebitCard} alt="" className="imagenDebitCard"/></a>    
                         <p className="textoDebitCard">Tarjeta de débito</p>
                         <a href="" className="linkDebitCard">Ver más</a>
                     </div>
                     <div className="efective">
-                        <img src={Efective} alt="" className="imagenEfective"/>
+                    <a href="#"><img src={Efective} alt="" className="imagenEfective"/></a>    
                         <p className="textoEfective">Efectivo</p>
                         <a href="" className="linkEfective">Ver más</a>
                     </div>
                     <div className="moreOptions">
-                        <img src={Options} alt="" className="imagenMoreOptions"/>
+                    <a href="#"><img src={Options} alt="" className="imagenMoreOptions"/></a>    
                         <p className="textoMoreOptions">Más medios de pago</p>
                         <a href="" className="linkMoreOptions">Ver todos</a>
                     </div>

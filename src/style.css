@@ -1,14 +1,18 @@
 /* 
 Color navbar amarillo: #fff159 
-Color fondo gris: #ebebeb*/
+Color fondo gris: #ebebeb
+Color verde success: #00a650*/
 html{
     width: 100%;
 }
+
 .header{
-    width: 100%;
+    
+    background-color: #fff159;
 }
 header{
     background-color: #fff159;
+    width: 100%;
 }
 input{
     width: 600px;
@@ -28,10 +32,13 @@ input:focus{
     padding: 19px, 0, 10px, 20px;
 }
 .nav-header{
-    align-self: center;
+    max-width: 1600px;
+    margin: auto;
     background-color: #fff159;
 }
 .nav-menu{
+    max-width: 1600px;
+    margin: auto;
     align-items: center;
     background-color: #fff159;
     padding-left: 75px;
@@ -57,16 +64,12 @@ input:focus{
     padding-left: 250px;
 }
 .sectionItemCount{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "texto"
-    "cards";
+
     background-color: #ebebeb;
 }
 .divContainerCompras{
-    grid-area: cards;
+    max-width: 1600px;
+    margin: auto;
     background-color: #ebebeb;
     display: flex;
     justify-content: center;
@@ -76,6 +79,8 @@ input:focus{
     padding: 10px;
 }
 .tituloUltimaCompra{
+    max-width: 1520px;
+    margin: auto;
     display: flex;
     color: #666;
     font-size: 26px;
@@ -83,9 +88,9 @@ input:focus{
     font-weight: 300;
 }
 .sectionHeaderItemCount{
-    grid-area: texto;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px 0 0 0;
 }
 .linkUltimaCompra{
     font-size: 16px;

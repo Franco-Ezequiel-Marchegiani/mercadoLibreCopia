@@ -7,9 +7,6 @@ function ItemCount({stock, initial, onAdd}){
     const [contador, setContador] = useState(0)
     const aumentarContador = () =>{
         setContador(contador + 1)
-        if(contador >= stock){
-            document.getElementById("aniadirCompra").disabled = true;
-        }
     }
     
     const restarContador = () =>{
@@ -25,14 +22,9 @@ function ItemCount({stock, initial, onAdd}){
     }
     return(
         <section className="sectionItemCount">
-            <div className="sectionHeaderItemCount">
-            <Row> {/* Utilizar bien col's, me falta agregar medidas de dispositivos grandes */}
-                <Col sm={2} lg={4} >
-                </Col>
-                <Col sm={10} lg={8}>
-                    <h1 className="tituloUltimaCompra">Basado en tu última compra<a href="#" className="linkUltimaCompra">Ver Historial</a></h1>              
-                </Col>
-            </Row>
+            <div className="sectionHeaderItemCount">          
+                    <h1 className="tituloUltimaCompra">Basado en tu última compra<a href="#" className="linkUltimaCompra">Ver Historial</a>
+                    </h1>                      
             </div>
                 <div className="divContainerCompras">
                     <div className="compraItem">
@@ -45,12 +37,12 @@ function ItemCount({stock, initial, onAdd}){
                                 </Card.Text>
                                 <Button onClick={restarContador} variant="primary" className="buttonCard">Quitar del carrito de compras</Button>
                                 <p>Carrito de compras : {contador}</p>
-                                <Button onClick={aumentarContador} variant="primary"className="buttonCard" id="aniadirCompra">Añadir al carrito de compras</Button>
+                                <Button disabled={contador >= stock} onClick={aumentarContador} variant="primary"className="buttonCard" id="aniadirCompra">Añadir al carrito de compras</Button>
                                 <Button onClick={resetearContador} variant="primary"className="buttonCard">Vacias Carrito</Button>
                             </Card.Body>
                     </Card>  
                     </div>
-                    {/* <div className="compraItem">
+                    <div className="compraItem">
                     <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="holder.js/100px180" alt="imagen Producto" />
                             <Card.Body>
@@ -109,7 +101,7 @@ function ItemCount({stock, initial, onAdd}){
                                 <Button onClick={resetearContador} variant="primary"className="buttonCard">Vacias Carrito</Button>
                             </Card.Body>
                     </Card> 
-                    </div> */}
+                    </div> 
                 </div>    
         </section>
     )

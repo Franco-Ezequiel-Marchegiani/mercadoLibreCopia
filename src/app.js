@@ -2,8 +2,8 @@ import React from 'react';
 import NavBar from "./componentes/navbar/navbar";
 import Carusel from './componentes/slider/carusel';
 import BarraHome from "./componentes/barraHome/barraHome"
-import ItemCount from "./containers/itemCount"
-
+import Item from "./componentes/item/item"
+import ListContainer from './componentes/itemListContainer/itemListContainer';
 
 const App = function(){
     return(
@@ -11,7 +11,8 @@ const App = function(){
             <NavBar/>
             <Carusel/>
             <BarraHome/>
-            <ItemCount stock={5} initial={0}/>
+            <Item stock={5} initial={0}/>
+            <ListContainer/>
         </>
     )
 }

@@ -9,14 +9,15 @@ import CartWidget from '../../containers/cartWidget';
 
 function NavBar(){
     return(
+        <header>
         <div className="nav-header">
                 <Row className="header">
                     <Col sm={3}><a href="#"><img src={Logo} alt="Logo Mercado Libre" className="logo"/></a></Col>
-                    <Col sm={5}>
+                    <Col sm={6}>
                     <input className="buscador" type="text" placeholder="Buscar productos, marcas, y más..." name="search" ></input>
                     <Button variant="light"><FontAwesomeIcon icon={faSearch}/></Button> 
                     </Col>
-                    <Col sm={4} className="compraAhora"><a href="#"><FontAwesomeIcon icon={faHandHoldingUsd}/> Comprá ahora y pagá después</a></Col>
+                    <Col sm={3} className="compraAhora"><a href="#"><FontAwesomeIcon icon={faHandHoldingUsd}/> Comprá ahora y pagá después</a></Col>
                 </Row>
             <div className="nav-menu">
                 <Navbar expand="lg">
@@ -66,6 +67,7 @@ function NavBar(){
                 </Navbar>
             </div>
         </div>
+        </header>
     )
 }
 
