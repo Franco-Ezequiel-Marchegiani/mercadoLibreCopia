@@ -3,11 +3,11 @@ import {Card, Button, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../style.css"
 import "../itemListContainer/itemListContainer.css"
-
-function Item({title, price, image}){
+import { Link } from 'react-router-dom';
+function Item({title, price, image, id}){
 
     return(
-        <div>
+        <div className="items">
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={image} className="imagenProducto" alt="imagen Producto" />
                     <Card.Body>
@@ -15,6 +15,7 @@ function Item({title, price, image}){
                         <Card.Text className="nombreProducto">
                         {title}
                         </Card.Text>
+                        <Link to={"/item/" + id}>Ver más</Link>
                     </Card.Body>
             </Card> 
         </div>

@@ -1,14 +1,25 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imagen from '../navbar/imgnavbar/logo.png'
 import {Button, Card} from 'react-bootstrap';
 import Item from '../item/item';
-
+import { useParams } from 'react-router-dom';
 
 function ItemList({productos}){
+    const [ items, setItems ] = useState([])
 
-    /* Lo intenté por afuera y tampoco me funciona el map, lo intenté con y sin el return, no comprendo el error de map  */
-    productos.map(producto =>{return(<Item id={producto.id} title={producto.title} image={producto.image} />)} )
+    const { id } = useParams()
+
+    useEffect(() => {
+        if(id){
+            const category = productos.filter(producto => producto.categoryId == id)
+            setItems(category)
+        }
+        else(
+            setItems(productos)
+        )
+    }, [id, productos]);
+    
     return(
         <section className="sectionItemCount">
             <div className="sectionHeaderItemCount">          
@@ -16,8 +27,11 @@ function ItemList({productos}){
                     </h1>                      
             </div>
                 <div className="divContainerCompras">
-                { productos.map( product => <Item id={product.id} 
-                name={product.title} image={product.image} />)
+                {productos && productos.map( product => <Item 
+                id={product.id}
+                title={product.title}
+                price={product.price}
+                image={product.image} />)
                 }
                 </div>    
         </section>
