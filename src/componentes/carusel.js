@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Slide1 from "./sliderImg/slider1.webp"
-import Slide2 from "./sliderImg/slider2.webp"
-import Slide3 from "./sliderImg/slider3.webp"
-import Slide4 from "./sliderImg/slider4.webp"
-import Slide5 from "./sliderImg/slider5.webp"
+import Slide1 from "../imagenes/slider1.webp"
+import Slide2 from "../imagenes/slider2.webp"
+import Slide3 from "../imagenes/slider3.webp"
+import Slide4 from "../imagenes/slider4.webp"
+import Slide5 from "../imagenes/slider5.webp"
 import {Carousel} from 'react-bootstrap';
 
 function SliderHome (){

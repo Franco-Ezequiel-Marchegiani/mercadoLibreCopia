@@ -1,17 +1,17 @@
 import React from 'react';
-import NavBar from "./componentes/navbar/navbar";
-import Carusel from './componentes/slider/carusel';
-import BarraHome from "./componentes/barraHome/barraHome";
-import ListContainer from './componentes/itemListContainer/itemListContainer';
-import ItemDetailContainer from './componentes/itemDetail/itemDetailContainer';
+import NavBar from "./componentes/navbar";
+import Carusel from './componentes/carusel';
+import BarraHome from "./componentes/barraHome";
+import ListContainer from './componentes/itemListContainer';
+import ItemDetailContainer from './componentes/itemDetailContainer';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 const App = function(){
     return(
         <>
             <BrowserRouter>
                 <NavBar />
-                <BarraHome/>
                 <Carusel/>
+                <BarraHome/>
                     <Switch>
                         <Route exact path="/">
                             <ListContainer />

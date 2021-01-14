@@ -1,9 +1,9 @@
 import React from 'react';
-import Creditcad from "./iconosBarraHome/credit-card1.svg"
-import DebitCard from "./iconosBarraHome/debit-card2.svg"
-import Efective from "./iconosBarraHome/payment-agreement3.svg"
-import Options from "./iconosBarraHome/view-more4.svg"
-import "./barraHome.css"
+import Creditcad from "../imagenes/credit-card1.svg"
+import DebitCard from "../imagenes/debit-card2.svg"
+import Efective from "../imagenes/payment-agreement3.svg"
+import Options from "../imagenes/view-more4.svg"
+import "../estilos/barraHome.css"
 
 function BarraHome(){
     return(

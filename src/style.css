@@ -63,21 +63,6 @@ input:focus{
     display: flex;
     padding-left: 250px;
 }
-.sectionItemCount{
-
-    background-color: #ebebeb;
-}
-.divContainerCompras{
-    max-width: 1600px;
-    margin: auto;
-    background-color: #ebebeb;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.compraItem{
-    padding: 10px;
-}
 .tituloUltimaCompra{
     max-width: 1520px;
     margin: auto;

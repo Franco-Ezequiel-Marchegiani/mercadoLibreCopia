@@ -1,11 +1,11 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHandHoldingUsd, faSearch, faShoppingCart, faBell, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
-import "../../style.css";
+import "../style.css";
 import {Button, Row, Col, Navbar, NavDropdown, Nav, Form} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Logo from "./imgnavbar/logo.png";
-import CartWidget from '../../containers/cartWidget';
+import Logo from "../imagenes/logo.png";
+import CartWidget from '../containers/cartWidget';
 
 function NavBar(){
     return(

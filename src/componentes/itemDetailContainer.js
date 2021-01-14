@@ -1,10 +1,10 @@
 import React, { useState, useEffect,} from 'react';
-import './itemDetail.css';
+import '../estilos/itemDetail.css';
 import ItemDetail from './itemDetail';
 import { useParams } from "react-router-dom";
-import ImagenCelu from './samsung-galaxy-a10.jpg';
-import ImagenMemoria from './memoria-ram-8gb.jpg';
-import ImagenLampara from './lampara-200w.jpg';
+import ImagenCelu from '../imagenes/samsung-galaxy-a10.jpg';
+import ImagenMemoria from '../imagenes/memoria-ram-8gb.jpg';
+import ImagenLampara from '../imagenes/lampara-200w.jpg';
 
 const apiProductos = [{
     id: 1,

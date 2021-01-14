@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Imagen from '../navbar/imgnavbar/logo.png'
+import Imagen from '../imagenes/logo.png'
 import {Button, Card} from 'react-bootstrap';
-import Item from '../item/item';
+import Item from './item';
 import { useParams } from 'react-router-dom';
+import '../estilos/itemList.css';
 
 function ItemList({productos}){
     const [ items, setItems ] = useState([])

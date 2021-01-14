@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {Card, Button, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "../../style.css"
-import "../itemListContainer/itemListContainer.css"
+import "../style.css"
+import "../estilos/itemListContainer.css"
 import { Link } from 'react-router-dom';
 function Item({title, price, image, id}){
 
