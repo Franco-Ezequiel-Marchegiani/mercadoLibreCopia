@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Card, Button, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import {Card} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../style.css"
 import "../estilos/itemListContainer.css"

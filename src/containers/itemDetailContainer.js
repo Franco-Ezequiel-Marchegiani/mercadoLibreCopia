@@ -1,6 +1,6 @@
 import React, { useState, useEffect,} from 'react';
 import '../estilos/itemDetail.css';
-import ItemDetail from './itemDetail';
+import ItemDetail from '../componentes/itemDetail';
 import { useParams } from "react-router-dom";
 import ImagenCelu from '../imagenes/samsung-galaxy-a10.jpg';
 import ImagenMemoria from '../imagenes/memoria-ram-8gb.jpg';

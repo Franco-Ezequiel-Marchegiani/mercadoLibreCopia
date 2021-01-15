@@ -2,16 +2,18 @@ import React, {useState} from 'react';
 import '../estilos/itemDetail.css';
 import {Card, Button, ListGroup} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemCount from '../containers/itemCount';
+import ItemCount from './itemCount';
+import { Link } from 'react-router-dom';
 function ItemDetail({nombre, precio, imagen,description, stock, initial}){
-    const [contador, setContador] = useState(0)
-    const aumentarContador = () =>{
-        setContador(contador + 1)
+    const [show, setShow] = useState(null)
+    const [hideAgregarCarrito, setHideAgregarCarrito] = useState(true)
+    
+    const onAdd = cantidad => {
+        console.log("Funtion onAdd" + cantidad)
+        setShow(cantidad)
+        setHideAgregarCarrito(false)
     }
 
-    const restarContador = () =>{
-        setContador(contador - 1)
-    }
     return(
         <div className="itemDetail">
             <Card style={{ width: '18rem' }}>
@@ -22,12 +24,18 @@ function ItemDetail({nombre, precio, imagen,description, stock, initial}){
                     <ListGroup variant="flush">
                         <ListGroup.Item>Precio: ${precio}</ListGroup.Item>
                         <ListGroup.Item>Stock disponible: {stock}</ListGroup.Item>
-                    </ListGroup>
+                    </ListGroup>                  
                     <div className="botonesCompra">
-                        <ItemCount/>
-                    
+                        <ItemCount stock="5" onAdd={onAdd} condicional={hideAgregarCarrito}/>
                     </div>
-                    
+                    <div className="botonCompra">
+                    {show ?
+                    <Link to="/cartWidget">
+                    <Button>Terminar mi compra</Button>
+                    </Link>
+                    : null
+                    }
+                    </div>
                 </Card.Body>
             </Card>
         </div>

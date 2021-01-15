@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Imagen1 from '../imagenes/lampara-200w.jpg'
 import Imagen2 from '../imagenes/memoria-ram-8gb.jpg'
 import Imagen3 from '../imagenes/samsung.jpg'
-import ItemList from './itemList';
+import ItemList from '../componentes/itemList';
 
 function ListContainer(){
     

@@ -37,6 +37,7 @@ input:focus{
     background-color: #fff159;
 }
 .nav-menu{
+    font-size: 14px;
     max-width: 1600px;
     margin: auto;
     align-items: center;

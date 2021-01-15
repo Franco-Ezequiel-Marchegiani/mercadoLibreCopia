@@ -3,3 +3,7 @@
     justify-content: center;
     padding: 20px;
 }
+.botonCompra{
+    display: flex;
+    justify-content: center;
+}
